@@ -485,3 +485,84 @@ a {
     color: white;
     margin-top: 2px;
 }
+
+
+/* === RESPONSIVE MÓVIL === */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .search-box {
+        order: 3;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .nav-links {
+        order: 2;
+        margin-left: 0;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .btn-red {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .user-name {
+        font-size: 12px;
+    }
+
+    .main-content {
+        padding: 15px 12px;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .movie-detail {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .movie-detail img {
+        width: 100%;
+        max-height: 350px;
+    }
+
+    .movie-detail h1 {
+        font-size: 22px;
+    }
+
+    .auth-section {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .asistente-card {
+        padding: 16px;
+    }
+
+    .asistente-input-row {
+        flex-direction: column;
+    }
+
+    .asistente-input-row button {
+        width: 100%;
+    }
+
+    .detail-actions {
+        flex-direction: column;
+    }
+
+    .detail-actions button {
+        width: 100%;
+    }
+}
