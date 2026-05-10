@@ -1,8 +1,12 @@
 # Spisok Films
 
-Spisok Films es una aplicación web para los amantes del cine. La idea es simple: puedes buscar cualquier película, añadirla a tu lista personal, marcarla como pendiente de ver, dejarle una puntuación y un comentario, y también tiene una sección para pedirle recomendaciones a la IA.
+## https://spisokfilms.page.gd/index.php
 
-Por dentro, la app consume la API de TMDB para obtener los datos de las películas (póster, sinopsis, puntuación...) y solo guarda en la base de datos lo esencial: qué usuario tiene qué película en su lista y las reseñas personales. El asistente de IA usa la API de Claude (Anthropic) para recomendar películas similares a un título o sugerirte qué ver según tu mood del momento.
+
+Spisok Films es una aplicación web para los amantes del cine. Tienes la opción de buscar cualquier película, añadirla a tu lista personal, marcarla como pendiente de ver, dejar una puntuación y un comentario. 
+También hay una sección para pedirle recomendaciones a la IA.
+
+Por dentro, la app consume la API de TMDB para obtener los datos de las películas (póster, sinopsis, puntuación...) y solo guarda en la base de datos qué usuario tiene qué película en su lista y las reseñas personales. El asistente de IA usa la API de Claude para recomendar películas similares a un título o sugerirte qué ver según tu mood del momento.
 
 ---
 
@@ -123,12 +127,3 @@ Todos los endpoints devuelven JSON.
 **APIs externas**
 - [TMDB API](https://www.themoviedb.org/) — datos de películas
 - [Anthropic API](https://www.anthropic.com/) (Claude) — asistente IA
-
----
-
-## Configuración
-
-1. Clona el repositorio en `htdocs/spisok_films`
-2. Importa la base de datos en phpMyAdmin
-3. Copia `config/appsettings.example.json` → `config/appsettings.json` y añade tus API keys
-4. Accede a `localhost/spisok_films`
