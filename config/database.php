@@ -3,10 +3,10 @@ class Database {
     private $conn;
 
     public function getConnection() {
-        $host     = getenv('MYSQLHOST')     ?: 'localhost';
-        $db_name  = getenv('MYSQLDATABASE') ?: 'spisok_films';
-        $username = getenv('MYSQLUSER')     ?: 'root';
-        $password = getenv('MYSQLPASSWORD') ?: '';
+        $host     = getenv('MYSQLHOST')     ?: 'sql105.infinityfree.com';
+        $db_name  = getenv('MYSQLDATABASE') ?: 'if0_41884257_spisok_films';
+        $username = getenv('MYSQLUSER')     ?: 'if0_41884257';
+        $password = getenv('MYSQLPASSWORD') ?: 'etpxavierlotfi';
         $port     = getenv('MYSQLPORT')     ?: '3306';
 
         $this->conn = null;
