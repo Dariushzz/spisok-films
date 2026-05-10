@@ -43,34 +43,7 @@ config/            → conexión a BD y configuración de API keys
 
 ## Base de datos (ER)
 
-```
-usuarios
-├── id (PK)
-├── nombre
-├── email
-├── password
-└── created_at
-
-favoritos
-├── id (PK)
-├── user_id (FK → usuarios)
-├── tmdb_movie_id
-└── created_at
-
-pendientes
-├── id (PK)
-├── user_id (FK → usuarios)
-├── tmdb_movie_id
-└── created_at
-
-resenas
-├── id (PK)
-├── user_id (FK → usuarios)
-├── tmdb_movie_id
-├── puntuacion (1-10)
-├── comentario
-└── created_at
-```
+![Texto alternativo](diagramaER.png)
 
 ---
 
